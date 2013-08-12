@@ -1,0 +1,29 @@
+<h1>Listing you2_helis</h1>
+<p>zurück zu <a href="/">home</a></p>
+<table>
+  <thead>
+    <tr>
+      <th>Content</th>
+      <th>User</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @you2_helis.each do |you2_heli| %>
+      <tr>
+        <td><%= you2_heli.content %></td>
+        <td><%= you2_heli.user_id %></td>
+        <td><%= link_to 'Show', you2_heli %></td>
+        <td><%= link_to 'Edit', edit_you2_heli_path(you2_heli) %></td>
+        <td><%= link_to 'Destroy', you2_heli, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New You2 heli', new_you2_heli_path %>
