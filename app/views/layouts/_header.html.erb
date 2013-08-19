@@ -1,12 +1,15 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="navbar-inner">
     <div class="container">
-      <%= link_to "sample app", '#', id: "logo" %>
+      <%= link_to "heli", home_path, id: "logo" %>
       <nav>
         <ul class="nav pull-right">
-          <li><%= link_to "Home",    '#' %></li>
-          <li><%= link_to "Help",    '#' %></li>
-          <li><%= link_to "Sign in", '#' %></li>
+          <li><%= link_to "Home", home_path %></li>
+          <li><%= link_to "About", about_path %></li>
+          <li><%= link_to "Help", help_path %><li>
+          <li><%= link_to "User", users_path %></li>
+			 <li><%= link_to "You2Heli", you2_helis_path %></li>
+			 <li><%= link_to "Sign in", '#' %></li>
         </ul>
       </nav>
     </div>

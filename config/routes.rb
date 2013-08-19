@@ -1,18 +1,19 @@
 Heli::Application.routes.draw do
-  get "pages/about"
-  get "pages/help"
-  resources :you2_helis
-
-  resources :users
-
-  get "welcome/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-
   # You can have the root of your site routed with "root"
-  root to: 'welcome#index'
-  match '/users',    to: 'welcome#users',    via: 'get'
-
+root to: 'welcome#index'
+  # Example resource route (maps HTTP verbs to controller actions automatically):
+  
+  resources :users
+  resources :you2_helis
+  
+match '/help', to: 'pages#help', via: 'get'
+match '/about', to: 'pages#about', via: 'get'
+match '/contact', to: 'pages#contact', via: 'get'
+match '/home', to: 'welcome#index', via: 'get'
+match '/users', to: 'home#users', via: 'get'
+match '/you2_helis', to: 'home#you2_helis', via: 'get'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -20,8 +21,7 @@ Heli::Application.routes.draw do
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
-  # Example resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
+
 
   # Example resource route with options:
   #   resources :products do

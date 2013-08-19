@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
   def index
-    @text = "jaja heli"
+    @text = "jaja, heli ist bald da"
   end
 end
