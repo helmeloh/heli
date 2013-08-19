@@ -14,6 +14,8 @@ match '/contact', to: 'pages#contact', via: 'get'
 match '/home', to: 'welcome#index', via: 'get'
 match '/users', to: 'home#users', via: 'get'
 match '/you2_helis', to: 'home#you2_helis', via: 'get'
+match '/signup',  to: 'home/users#new', via: 'get'
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
