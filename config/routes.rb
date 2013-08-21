@@ -7,6 +7,7 @@ root to: 'welcome#index'
   
   resources :users
   resources :you2_helis
+  get "users/new"
   
 match '/help', to: 'pages#help', via: 'get'
 match '/about', to: 'pages#about', via: 'get'
@@ -14,7 +15,7 @@ match '/contact', to: 'pages#contact', via: 'get'
 match '/home', to: 'welcome#index', via: 'get'
 match '/users', to: 'home#users', via: 'get'
 match '/you2_helis', to: 'home#you2_helis', via: 'get'
-match '/signup',  to: 'home/users#new', via: 'get'
+match '/signup',  to: 'users#new', via: 'get'
 
 
   # Example of regular route:
