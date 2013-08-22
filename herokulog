@@ -1,0 +1,102 @@
+2013-08-21T00:22:47.417447+00:00 app[web.1]: Started GET "/home" for 188.20.236.43 at 2013-08-21 00:22:47 +0000
+2013-08-21T00:22:47.417447+00:00 app[web.1]: Started GET "/home" for 188.20.236.43 at 2013-08-21 00:22:47 +0000
+2013-08-21T00:22:47.427917+00:00 heroku[router]: at=info method=GET path=/home host=heli-bot.herokuapp.com fwd="188.20.236.43" dyno=web.1 connect=2ms service=13ms status=304 bytes=0
+2013-08-21T00:22:52.012340+00:00 app[web.1]: Started GET "/signup" for 188.20.236.43 at 2013-08-21 00:22:52 +0000
+2013-08-21T00:22:52.012340+00:00 app[web.1]: Started GET "/signup" for 188.20.236.43 at 2013-08-21 00:22:52 +0000
+2013-08-21T00:22:52.033229+00:00 heroku[router]: at=info method=GET path=/signup host=heli-bot.herokuapp.com fwd="188.20.236.43" dyno=web.1 connect=0ms service=17ms status=304 bytes=0
+2013-08-21T00:23:26.947491+00:00 app[web.1]: Started POST "/users" for 188.20.236.43 at 2013-08-21 00:23:26 +0000
+2013-08-21T00:23:26.947491+00:00 app[web.1]: Started POST "/users" for 188.20.236.43 at 2013-08-21 00:23:26 +0000
+2013-08-21T00:23:27.030594+00:00 heroku[router]: at=info method=POST path=/users host=heli-bot.herokuapp.com fwd="188.20.236.43" dyno=web.1 connect=2ms service=91ms status=500 bytes=1266
+2013-08-21T00:23:27.035241+00:00 app[web.1]: 
+2013-08-21T00:23:27.035241+00:00 app[web.1]: 
+2013-08-21T00:23:27.035241+00:00 app[web.1]: 
+2013-08-21T00:23:27.035241+00:00 app[web.1]: NoMethodError (undefined method `password_digest=' for #<User:0x007f3e7d766778>):
+2013-08-21T00:23:27.035241+00:00 app[web.1]:   app/controllers/users_controller.rb:27:in `create'
+2013-08-21T00:23:27.035241+00:00 app[web.1]: NoMethodError (undefined method `password_digest=' for #<User:0x007f3e7d766778>):
+2013-08-21T00:23:27.035241+00:00 app[web.1]:   app/controllers/users_controller.rb:27:in `create'
+2013-08-21T00:23:27.035241+00:00 app[web.1]: 
+2013-08-21T00:23:27.035241+00:00 app[web.1]: 
+2013-08-21T00:23:27.035241+00:00 app[web.1]: 
+2013-08-21T00:23:33.231162+00:00 app[web.1]: Started GET "/home" for 188.20.236.43 at 2013-08-21 00:23:33 +0000
+2013-08-21T00:23:33.231162+00:00 app[web.1]: Started GET "/home" for 188.20.236.43 at 2013-08-21 00:23:33 +0000
+2013-08-21T00:23:33.236839+00:00 heroku[router]: at=info method=GET path=/home host=heli-bot.herokuapp.com fwd="188.20.236.43" dyno=web.1 connect=0ms service=10ms status=304 bytes=0
+2013-08-21T00:23:56.766548+00:00 app[web.1]: Started GET "/about" for 188.20.236.43 at 2013-08-21 00:23:56 +0000
+2013-08-21T00:23:56.766548+00:00 app[web.1]: Started GET "/about" for 188.20.236.43 at 2013-08-21 00:23:56 +0000
+2013-08-21T00:23:56.770350+00:00 heroku[router]: at=info method=GET path=/about host=heli-bot.herokuapp.com fwd="188.20.236.43" dyno=web.1 connect=1ms service=8ms status=304 bytes=0
+2013-08-21T00:23:57.110995+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=heli-bot.herokuapp.com fwd="188.20.236.43" dyno=web.1 connect=11ms service=12ms status=304 bytes=0
+2013-08-21T00:24:00.328225+00:00 app[web.1]: Started GET "/help" for 188.20.236.43 at 2013-08-21 00:24:00 +0000
+2013-08-21T00:24:00.328225+00:00 app[web.1]: Started GET "/help" for 188.20.236.43 at 2013-08-21 00:24:00 +0000
+2013-08-21T00:24:00.341193+00:00 heroku[router]: at=info method=GET path=/help host=heli-bot.herokuapp.com fwd="188.20.236.43" dyno=web.1 connect=0ms service=12ms status=200 bytes=1481
+2013-08-21T00:24:02.783080+00:00 app[web.1]: Started GET "/users" for 188.20.236.43 at 2013-08-21 00:24:02 +0000
+2013-08-21T00:24:02.783080+00:00 app[web.1]: Started GET "/users" for 188.20.236.43 at 2013-08-21 00:24:02 +0000
+2013-08-21T00:24:06.192369+00:00 app[web.1]: Started GET "/you2_helis" for 188.20.236.43 at 2013-08-21 00:24:06 +0000
+2013-08-21T00:24:06.192369+00:00 app[web.1]: Started GET "/you2_helis" for 188.20.236.43 at 2013-08-21 00:24:06 +0000
+2013-08-21T00:24:02.790595+00:00 heroku[router]: at=info method=GET path=/users host=heli-bot.herokuapp.com fwd="188.20.236.43" dyno=web.1 connect=0ms service=13ms status=200 bytes=2291
+2013-08-21T00:24:09.949307+00:00 app[web.1]: Started GET "/signup" for 188.20.236.43 at 2013-08-21 00:24:09 +0000
+2013-08-21T00:24:09.949307+00:00 app[web.1]: Started GET "/signup" for 188.20.236.43 at 2013-08-21 00:24:09 +0000
+2013-08-21T00:24:09.961052+00:00 heroku[router]: at=info method=GET path=/signup host=heli-bot.herokuapp.com fwd="188.20.236.43" dyno=web.1 connect=1ms service=17ms status=304 bytes=0
+2013-08-21T00:24:13.446998+00:00 app[web.1]: Started GET "/home" for 188.20.236.43 at 2013-08-21 00:24:13 +0000
+2013-08-21T00:24:13.446998+00:00 app[web.1]: Started GET "/home" for 188.20.236.43 at 2013-08-21 00:24:13 +0000
+2013-08-21T00:24:13.452954+00:00 heroku[router]: at=info method=GET path=/home host=heli-bot.herokuapp.com fwd="188.20.236.43" dyno=web.1 connect=2ms service=8ms status=304 bytes=0
+2013-08-21T00:24:25.166933+00:00 app[web.1]: Started GET "/about" for 188.20.236.43 at 2013-08-21 00:24:25 +0000
+2013-08-21T00:24:25.166933+00:00 app[web.1]: Started GET "/about" for 188.20.236.43 at 2013-08-21 00:24:25 +0000
+2013-08-21T00:24:25.173614+00:00 heroku[router]: at=info method=GET path=/about host=heli-bot.herokuapp.com fwd="188.20.236.43" dyno=web.1 connect=5ms service=9ms status=304 bytes=0
+2013-08-21T00:24:36.960621+00:00 app[web.1]: Started GET "/home" for 188.20.236.43 at 2013-08-21 00:24:36 +0000
+2013-08-21T00:24:36.960621+00:00 app[web.1]: Started GET "/home" for 188.20.236.43 at 2013-08-21 00:24:36 +0000
+2013-08-21T00:24:36.966877+00:00 heroku[router]: at=info method=GET path=/home host=heli-bot.herokuapp.com fwd="188.20.236.43" dyno=web.1 connect=1ms service=11ms status=304 bytes=0
+2013-08-21T00:24:06.228979+00:00 heroku[router]: at=info method=GET path=/you2_helis host=heli-bot.herokuapp.com fwd="188.20.236.43" dyno=web.1 connect=1ms service=41ms status=200 bytes=2609
+2013-08-21T00:31:43.974828+00:00 heroku[router]: at=info method=GET path=/signup host=heli-bot.herokuapp.com fwd="188.20.236.43" dyno=web.1 connect=7ms service=14ms status=30
+4 bytes=0
+2013-08-21T00:31:43.967489+00:00 app[web.1]: Started GET "/signup" for 188.20.236.43 at 2013-08-21 00:31:43 +0000
+2013-08-21T00:31:43.967489+00:00 app[web.1]: Started GET "/signup" for 188.20.236.43 at 2013-08-21 00:31:43 +0000
+2013-08-21T00:31:44.273481+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=heli-bot.herokuapp.com fwd="188.20.236.43" dyno=web.1 connect=2ms service=5ms status=304 bytes=0
+2013-08-21T00:32:04.392837+00:00 app[web.1]: Started POST "/users" for 188.20.236.43 at 2013-08-21 00:32:04 +0000
+2013-08-21T00:32:04.392837+00:00 app[web.1]: Started POST "/users" for 188.20.236.43 at 2013-08-21 00:32:04 +0000
+2013-08-21T00:32:04.478178+00:00 app[web.1]: NoMethodError (undefined method `password_digest=' for #<User:0x007f3e7f1bc6e0>):
+2013-08-21T00:32:04.478178+00:00 app[web.1]:   app/controllers/users_controller.rb:27:in `create'
+2013-08-21T00:32:04.478178+00:00 app[web.1]:   app/controllers/users_controller.rb:27:in `create'
+2013-08-21T00:32:04.479572+00:00 heroku[router]: at=info method=POST path=/users host=heli-bot.herokuapp.com fwd="188.20.236.43" dyno=web.1 connect=4ms service=93ms status=500 bytes=1266
+2013-08-21T00:32:04.478178+00:00 app[web.1]: 
+2013-08-21T00:32:04.478178+00:00 app[web.1]: 
+2013-08-21T00:32:04.478178+00:00 app[web.1]: 
+2013-08-21T00:32:04.478178+00:00 app[web.1]: 
+2013-08-21T00:32:04.478178+00:00 app[web.1]: NoMethodError (undefined method `password_digest=' for #<User:0x007f3e7f1bc6e0>):
+2013-08-21T00:32:04.478178+00:00 app[web.1]: 
+2013-08-21T00:32:04.478178+00:00 app[web.1]: 
+2013-08-21T00:49:41.885402+00:00 app[web.1]: Started GET "/signup" for 188.20.236.43 at 2013-08-21 00:49:41 +0000
+2013-08-21T00:49:41.885402+00:00 app[web.1]: Started GET "/signup" for 188.20.236.43 at 2013-08-21 00:49:41 +0000
+2013-08-21T00:49:41.900295+00:00 heroku[router]: at=info method=GET path=/signup host=heli-bot.herokuapp.com fwd="188.20.236.43" dyno=web.1 connect=4ms service=13ms status=304 bytes=0
+2013-08-21T00:49:42.156687+00:00 heroku[router]: at=info method=GET path=/assets/application-83d7487882bca0c99479e1850a8b557d.js host=heli-bot.herokuapp.com fwd="188.20.236.43" dyno=web.1 connect=13ms service=4ms status=304 bytes=0
+2013-08-21T00:49:42.149934+00:00 heroku[router]: at=info method=GET path=/assets/application-908560f9bebed7e65733c84cf400c70e.css host=heli-bot.herokuapp.com fwd="188.20.236.43" dyno=web.1 connect=22ms service=7ms status=304 bytes=0
+2013-08-21T00:50:01.206762+00:00 app[web.1]: Started POST "/users" for 188.20.236.43 at 2013-08-21 00:50:01 +0000
+2013-08-21T00:50:01.206762+00:00 app[web.1]: Started POST "/users" for 188.20.236.43 at 2013-08-21 00:50:01 +0000
+2013-08-21T00:50:01.333920+00:00 heroku[router]: at=info method=POST path=/users host=heli-bot.herokuapp.com fwd="188.20.236.43" dyno=web.1 connect=1ms service=133ms status=500 bytes=1266
+2013-08-21T00:50:01.333363+00:00 app[web.1]: 
+2013-08-21T00:50:01.333363+00:00 app[web.1]: 
+2013-08-21T00:50:01.333363+00:00 app[web.1]: NoMethodError (undefined method `password_digest=' for #<User:0x007f3e6c0e9500>):
+2013-08-21T00:50:01.333363+00:00 app[web.1]:   app/controllers/users_controller.rb:27:in `create'
+2013-08-21T00:50:01.333363+00:00 app[web.1]: 
+2013-08-21T00:50:01.333363+00:00 app[web.1]: NoMethodError (undefined method `password_digest=' for #<User:0x007f3e6c0e9500>):
+2013-08-21T00:50:01.333363+00:00 app[web.1]: 
+2013-08-21T00:50:01.333363+00:00 app[web.1]:   app/controllers/users_controller.rb:27:in `create'
+2013-08-21T00:50:01.333363+00:00 app[web.1]: 
+2013-08-21T00:50:01.333363+00:00 app[web.1]: 
+2013-08-21T00:50:20.118215+00:00 heroku[api]: Starting process with command `bundle exec rake db:migrate` by helmut@hirner.at
+2013-08-21T00:50:27.190092+00:00 heroku[run.8598]: Awaiting client
+2013-08-21T00:50:27.233395+00:00 heroku[run.8598]: Starting process with command `bundle exec rake db:migrate`
+2013-08-21T00:50:28.264191+00:00 heroku[run.8598]: State changed from starting to up
+2013-08-21T00:50:32.823386+00:00 heroku[run.8598]: Process exited with status 0
+2013-08-21T00:50:32.854778+00:00 heroku[run.8598]: State changed from up to complete
+2013-08-21T00:50:54.620143+00:00 app[web.1]: Started POST "/users" for 188.20.236.43 at 2013-08-21 00:50:54 +0000
+2013-08-21T00:50:54.620143+00:00 app[web.1]: Started POST "/users" for 188.20.236.43 at 2013-08-21 00:50:54 +0000
+2013-08-21T00:50:54.702536+00:00 app[web.1]: 
+2013-08-21T00:50:54.702536+00:00 app[web.1]:   app/controllers/users_controller.rb:27:in `create'
+2013-08-21T00:50:54.702536+00:00 app[web.1]: 
+2013-08-21T00:50:54.701980+00:00 heroku[router]: at=info method=POST path=/users host=heli-bot.herokuapp.com fwd="188.20.236.43" dyno=web.1 connect=1ms service=87ms status=500 bytes=1266
+2013-08-21T00:50:54.702536+00:00 app[web.1]: NoMethodError (undefined method `password_digest=' for #<User:0x007f3e7c4da3e8>):
+2013-08-21T00:50:54.702536+00:00 app[web.1]: 
+2013-08-21T00:50:54.702536+00:00 app[web.1]: 
+2013-08-21T00:50:54.702536+00:00 app[web.1]: 
+2013-08-21T00:50:54.702536+00:00 app[web.1]: 
+2013-08-21T00:50:54.702536+00:00 app[web.1]:   app/controllers/users_controller.rb:27:in `create'
+2013-08-21T00:50:54.702536+00:00 app[web.1]: NoMethodError (undefined method `password_digest=' for #<User:0x007f3e7c4da3e8>):
