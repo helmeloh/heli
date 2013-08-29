@@ -7,7 +7,8 @@ root to: 'welcome#index'
   
   resources :users
   resources :you2_helis
-  get "users/new"
+  resources :sessions, only: [:new, :create, :destroy]
+
   
 match '/help', to: 'pages#help', via: 'get'
 match '/about', to: 'pages#about', via: 'get'
@@ -16,7 +17,8 @@ match '/home', to: 'welcome#index', via: 'get'
 match '/users', to: 'home#users', via: 'get'
 match '/you2_helis', to: 'home#you2_helis', via: 'get'
 match '/signup',  to: 'users#new', via: 'get'
-
+match '/signin',  to: 'sessions#new',         via: 'get'
+match '/signout', to: 'sessions#destroy',     via: 'delete'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
