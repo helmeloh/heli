@@ -9,7 +9,6 @@ gem 'faker', '1.0.1'
 gem 'will_paginate', '3.0.4'
 gem 'bootstrap-will_paginate', '0.0.9'
 gem 'protected_attributes' , '1.0.3'
-gem 'pg'
 gem 'programr'
 
 group :development, :test do
@@ -54,7 +53,7 @@ group :doc do
 end
 
 group :production do
-  gem 'pg', '0.15.1'
+  gem 'pg'
   gem 'rails_12factor', '0.0.2'
 end
 
