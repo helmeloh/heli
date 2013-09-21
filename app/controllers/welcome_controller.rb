@@ -13,4 +13,7 @@ s = 'hello'
 reaction = robot.get_reaction(s) 
   @text  = reaction
   end
+  def home
+    @you2heli = current_user.you2helis.build if signed_in?
+  end
 end

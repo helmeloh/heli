@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+ has_many :you2helis, dependent: :destroy
 attr_accessible :name, :email, :password, :password_confirmation
 	before_save { self.email = email.downcase }
 	validates :name,  presence: true, length: { maximum: 50 }

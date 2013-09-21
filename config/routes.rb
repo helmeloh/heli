@@ -6,8 +6,9 @@ root to: 'welcome#index'
   # Example resource route (maps HTTP verbs to controller actions automatically):
   
   resources :users
-  resources :you2_helis
+  resources :you2helis, only: [:create, :destroy]
   resources :sessions, only: [:new, :create, :destroy]
+
 
   
 match '/help', to: 'pages#help', via: 'get'
