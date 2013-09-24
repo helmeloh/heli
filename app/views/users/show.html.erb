@@ -17,24 +17,17 @@
   <strong>Email:</strong>
   <%= @user.email %>
 </p>
-
-
     </section>
   </aside>
 </div>
 
-
-
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
 <div class="span8">
     <% if @user.you2helis.any? %>
       <h3>You2helis (<%= @user.you2helis.count %>)</h3>
       <ol class="you2helis">
-        <%= render @you2helis %>
+       <%= render @user.you2helis %>
       </ol>
-      <%= will_paginate @you2helis %>
+
     <% end %>
 
   </div>
