@@ -10,7 +10,7 @@ class You2helisController < ApplicationController
       flash[:success] = "you2heli created!"
       redirect_to root_path
     else
-      render 'static_pages/home'
+      render 'welcome/index'
     end
   end
 
