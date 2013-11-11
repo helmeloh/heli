@@ -1,6 +1,11 @@
 class User < ActiveRecord::Base
+<<<<<<< HEAD
 	  has_many :you2helis
 	attr_accessible :name, :email, :password, :password_confirmation
+=======
+ has_many :you2helis, dependent: :destroy
+attr_accessible :name, :email, :password, :password_confirmation
+>>>>>>> 854e7be69d4ac660ade22592dd15f26fbd7aeb65
 	before_save { self.email = email.downcase }
 	validates :name,  presence: true, length: { maximum: 50 }
 	VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
@@ -15,6 +20,11 @@ class User < ActiveRecord::Base
 
   def User.encrypt(token)
     Digest::SHA1.hexdigest(token.to_s)
+  end
+  
+    def feed
+    # This is preliminary. See "Following users" for the full implementation.
+    You2heli.where("user_id = ?", id)
   end
 
   private

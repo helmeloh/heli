@@ -12,8 +12,13 @@ class UsersController < ApplicationController
   
    def show
     @user = User.find(params[:id])
+<<<<<<< HEAD
     @you2helis = @user.you2helis.paginate(page: params[:page])
  end
+=======
+    @you2helis =@user.you2helis.paginate(page: params[:page])
+  end
+>>>>>>> 854e7be69d4ac660ade22592dd15f26fbd7aeb65
 
   # GET /users/1
   # GET /users/1.json

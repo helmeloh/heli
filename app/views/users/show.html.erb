@@ -17,14 +17,20 @@
   <strong>Email:</strong>
   <%= @user.email %>
 </p>
-
-
     </section>
   </aside>
 </div>
 
+<div class="span8">
+    <% if @user.you2helis.any? %>
+      <h3>You2helis (<%= @user.you2helis.count %>)</h3>
+      <ol class="you2helis">
+       <%= render @user.you2helis %>
+      </ol>
 
+    <% end %>
 
+<<<<<<< HEAD
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
@@ -38,3 +44,6 @@
     <% end %>
   </div>
 </div>
+=======
+  </div>
+>>>>>>> 854e7be69d4ac660ade22592dd15f26fbd7aeb65

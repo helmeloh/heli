@@ -6,16 +6,17 @@ root to: 'welcome#index'
   # Example resource route (maps HTTP verbs to controller actions automatically):
   
   resources :users
-  resources :you2_helis
+  resources :you2helis, only: [:create, :destroy]
   resources :sessions, only: [:new, :create, :destroy]
+
 
   
 match '/help', to: 'pages#help', via: 'get'
 match '/about', to: 'pages#about', via: 'get'
 match '/contact', to: 'pages#contact', via: 'get'
 match '/home', to: 'welcome#index', via: 'get'
+match '/you2helis', to: 'welcome#users', via: 'get'
 match '/users', to: 'welcome#users', via: 'get'
-match '/you2_helis', to: 'home#you2_helis', via: 'get'
 match '/signup',  to: 'users#new', via: 'get'
 match '/signin',  to: 'sessions#new',         via: 'get'
 match '/signout', to: 'sessions#destroy',     via: 'delete'
