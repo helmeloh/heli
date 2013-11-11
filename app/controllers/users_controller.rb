@@ -12,7 +12,8 @@ class UsersController < ApplicationController
   
    def show
     @user = User.find(params[:id])
-  end
+    @you2helis = @user.you2helis.paginate(page: params[:page])
+ end
 
   # GET /users/1
   # GET /users/1.json

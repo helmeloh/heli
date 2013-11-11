@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
-attr_accessible :name, :email, :password, :password_confirmation
+	  has_many :you2helis
+	attr_accessible :name, :email, :password, :password_confirmation
 	before_save { self.email = email.downcase }
 	validates :name,  presence: true, length: { maximum: 50 }
 	VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
@@ -7,6 +8,7 @@ attr_accessible :name, :email, :password, :password_confirmation
 	has_secure_password
 	validates_presence_of :password, :on => :create
 	:password_digest
+	  has_many :you2helis, dependent: :destroy
 	def User.new_remember_token
     SecureRandom.urlsafe_base64
   end
